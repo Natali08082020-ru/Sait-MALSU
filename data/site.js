@@ -4,7 +4,7 @@ window.MalsuDataPart = window.MalsuDataPart || {};
 
 window.MalsuDataPart.site = {
 
-  baseUrl: "https://malsu.github.io",
+  baseUrl: "https://natali08082020-ru.github.io/Sait-MALSU",
 
   telegram: "https://t.me/natali08082020",
 
@@ -40,7 +40,7 @@ window.MalsuDataPart.site = {
 
   ],
 
-  ogImage: "malsu/malsu.jpg",
+  ogImage: "malsu_foto/Bazaart_20260607_055012_577.png",
 
   /** Полный заголовок страницы (главная) */
 

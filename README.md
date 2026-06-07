@@ -1,5 +1,8 @@
 # MalSu — нейропесни
 
+**Репозиторий:** [github.com/Natali08082020-ru/Sait-MALSU](https://github.com/Natali08082020-ru/Sait-MALSU)  
+**Сайт (GitHub Pages):** [natali08082020-ru.github.io/Sait-MALSU](https://natali08082020-ru.github.io/Sait-MALSU/)
+
 Официальный лендинг музыкального проекта **MalSu** (Малахова Наталья и Супрунчук Игорь): альбомы, примеры песен на заказ, контакты.
 
 Сайт статический: HTML, CSS и JavaScript без сборки и зависимостей.
@@ -94,7 +97,7 @@ git init
 git add .
 git commit -m "Первый коммит: сайт MalSu — нейропесни"
 git branch -M main
-git remote add origin https://github.com/ВАШ_ЛОГИН/malsu-website.git
+git remote add origin https://github.com/Natali08082020-ru/Sait-MALSU.git
 git push -u origin main
 ```
 
@@ -106,7 +109,7 @@ git push -u origin main
 2. **Source:** Deploy from a branch
 3. **Branch:** `main` → папка **`/ (root)`** → Save
 4. Через 1–2 минуты сайт будет по адресу:  
-   `https://ВАШ_ЛОГИН.github.io/ИМЯ_РЕПОЗИТОРИЯ/`
+   `https://natali08082020-ru.github.io/Sait-MALSU/`
 
 ## Технологии
 
