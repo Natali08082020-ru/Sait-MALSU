@@ -1,0 +1,16 @@
+* text=auto
+
+# Text sources
+*.html text
+*.css text
+*.js text
+*.md text
+*.bat text
+
+# Media — do not change line endings
+*.mp3 binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.webp binary
+*.gif binary

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Вход — Админ MalSu</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body admin-login-body">
+  <main class="admin-login">
+    <a href="../index.html" class="logo admin-login-logo">Mal<span>Su</span></a>
+    <h1>Вход в админку</h1>
+    <form id="login-form" class="admin-login-form admin-card">
+      <div class="admin-field admin-field--full">
+        <label for="login-user">Логин</label>
+        <input id="login-user" name="username" type="text" autocomplete="username" required>
+      </div>
+      <div class="admin-field admin-field--full">
+        <label for="login-pass">Пароль</label>
+        <input id="login-pass" name="password" type="password" autocomplete="current-password" required>
+      </div>
+      <p id="login-error" class="admin-error is-hidden">Неверный логин или пароль</p>
+      <button type="submit" class="admin-btn admin-btn--primary admin-btn--block">Войти</button>
+    </form>
+  </main>
+  <script src="../data/site.js"></script>
+  <script src="../data/contacts.js"></script>
+  <script src="../data/index.js"></script>
+  <script src="../providers/admin-data.store.js"></script>
+  <script src="../providers/local.provider.js"></script>
+  <script src="../services/settings.service.js"></script>
+  <script src="admin-auth.js"></script>
+  <script>
+    AdminAuth.redirectIfAuthenticated();
+    document.getElementById("login-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      const username = (fd.get("username") || "").toString().trim();
+      const password = (fd.get("password") || "").toString();
+      const err = document.getElementById("login-error");
+      if (AdminAuth.login(username, password)) {
+        window.location.href = "index.html";
+      } else {
+        err.classList.remove("is-hidden");
+      }
+    });
+  </script>
+</body>
+</html>

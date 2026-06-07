@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Обзор — Админ MalSu</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+  <div class="admin-layout">
+    <aside class="admin-sidebar">
+      <a href="../index.html" class="logo">Mal<span>Su</span></a>
+      <nav class="admin-nav" id="admin-nav"></nav>
+      <button type="button" class="admin-btn admin-btn--ghost admin-logout" id="admin-logout">Выйти</button>
+    </aside>
+    <main class="admin-main">
+      <a href="../index.html" class="admin-back">← На сайт</a>
+      <h1>Обзор</h1>
+
+      <div class="admin-stats" id="admin-stats"></div>
+
+      <p class="admin-highlight">Заказы в работе и на согласовании: <strong id="admin-in-work">0</strong></p>
+
+      <section class="admin-card">
+        <h2 class="admin-section">Последние заказы</h2>
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Номер</th><th>Дата</th><th>Клиент</th><th>Категория</th><th>Статус</th><th>Дедлайн</th>
+              </tr>
+            </thead>
+            <tbody id="admin-recent-orders"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="admin-card">
+        <h2 class="admin-section">Ближайшие дедлайны</h2>
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead>
+              <tr><th>Номер</th><th>Клиент</th><th>Дедлайн</th><th>Статус</th></tr>
+            </thead>
+            <tbody id="admin-deadlines"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="../data/site.js"></script>
+  <script src="../data/albums.js"></script>
+  <script src="../data/tracks.js"></script>
+  <script src="../data/faq.js"></script>
+  <script src="../data/reviews.js"></script>
+  <script src="../data/pricing.js"></script>
+  <script src="../data/contacts.js"></script>
+  <script src="../data/team.js"></script>
+  <script src="../data/news.js"></script>
+  <script src="../data/index.js"></script>
+  <script src="../crm/order-status.js"></script><script src="../crm/payment-status.js"></script><script src="../crm/order-activity.js"></script>
+  <script src="../crm/order-model.js"></script>
+  <script src="../utils/order-number.js"></script>
+  <script src="../providers/admin-data.store.js"></script>
+  <script src="../providers/orders.store.js"></script><script src="../providers/order-files.local.js"></script>
+  <script src="../providers/local.provider.js"></script>
+  <script src="../services/albums.service.js"></script>
+  <script src="../services/tracks.service.js"></script>
+  <script src="../services/faq.service.js"></script>
+  <script src="../services/reviews.service.js"></script>
+  <script src="../services/settings.service.js"></script>
+  <script src="../services/pricing.service.js"></script>
+  <script src="../services/orders.service.js"></script><script src="../services/order-files.service.js"></script>
+  <script src="../services/data-portability.service.js"></script>
+  <script src="admin-auth.js"></script><script src="admin-core.js"></script>
+  <script src="admin-app.js"></script>
+  <script>AdminApp.init("dashboard");</script>
+</body>
+</html>

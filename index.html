@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Нейропесни на заказ от MalSu: авторская песня в подарок, песня на день рождения, музыкальный подарок. Альбомы «Мысли» и «Чувства». Уникальные композиции для праздников и особых событий.">
+  <meta name="keywords" content="нейропесни на заказ, песня на заказ, авторская песня в подарок, песня на день рождения, музыкальный подарок, MalSu">
+  <meta name="author" content="MalSu">
+  <link rel="canonical" href="/">
+  <title>MalSu — нейропесни на заказ | песня на заказ, авторская песня в подарок</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="MalSu">
+  <meta property="og:title" content="MalSu — нейропесни на заказ | авторская песня в подарок">
+  <meta property="og:description" content="Нейропесни на заказ: песня на день рождения, музыкальный подарок, авторская песня в подарок. Альбомы «Мысли» и «Чувства».">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MalSu — нейропесни на заказ">
+  <meta name="twitter:description" content="Авторская песня в подарок, песня на день рождения, музыкальный подарок от проекта MalSu.">
+  <meta name="twitter:image" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-vinyl" aria-hidden="true"></div>
+  <div class="bg-eq" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="floating-notes" aria-hidden="true">
+    <span class="note" style="--x:8%;--d:0s">♪</span>
+    <span class="note" style="--x:22%;--d:2s">♫</span>
+    <span class="note" style="--x:45%;--d:4s">♬</span>
+    <span class="note" style="--x:68%;--d:1s">♩</span>
+    <span class="note" style="--x:85%;--d:3s">♪</span>
+    <span class="note" style="--x:55%;--d:5s">♫</span>
+  </div>
+
+  <header class="header">
+    <a href="index.html" class="logo">Mal<span>Su</span></a>
+    <nav class="nav">
+      <a href="#albums">Альбомы</a>
+      <a href="#story">История</a>
+      <a href="#team">О нас</a>
+      <a href="#order">Песни на заказ</a>
+      <a href="#pricing">Стоимость</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Контакты</a>
+      <a href="#contact" class="nav-cta" data-event="hero-story">Рассказать свою историю</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- 1. Hero -->
+    <section class="hero">
+      <div class="hero-visual">
+        <div class="spectrum-ring" aria-hidden="true"></div>
+        <div class="vinyl-spin" id="hero-vinyl">
+          <img src="malsu_foto/Bazaart_20260607_055012_577.png" alt="MalSu" width="280" height="280" id="hero-vinyl-img">
+        </div>
+      </div>
+      <div class="hero-content reveal">
+        <p class="hero-tag">
+          <span class="eq-dot"></span>
+          Нейропесни · 2026
+        </p>
+        <h1 class="hero-title">
+          Нейропесни на заказ и<br>
+          <span class="gradient-text">авторская музыка MalSu</span>
+        </h1>
+        <p class="hero-lead">
+          Создаём песни, которые рассказывают историю — от идеи до готового трека.
+        </p>
+        <p class="hero-extra">
+          Альбомы «Мысли» и «Чувства», авторская музыка и создание уникальных
+          песен для праздников, признаний, семейных историй и особых событий.
+        </p>
+        <div class="hero-waveform" aria-hidden="true">
+          <svg viewBox="0 0 400 48" preserveAspectRatio="none">
+            <path class="wave-line" d="M0,24 Q20,8 40,24 T80,24 T120,24 T160,24 T200,24 T240,24 T280,24 T320,24 T360,24 T400,24"/>
+            <path class="wave-line wave-line--2" d="M0,28 Q25,40 50,28 T100,28 T150,28 T200,28 T250,28 T300,28 T350,28 T400,28"/>
+          </svg>
+        </div>
+        <div class="hero-actions">
+          <a href="#listen" class="btn btn-primary" data-event="hero-listen">
+            <span class="btn-icon">▶</span> Слушать альбомы
+          </a>
+          <div class="cta-action">
+            <a href="#contact" class="btn btn-secondary" data-event="hero-story">Рассказать свою историю</a>
+            <p class="cta-followup">Ответим, обсудим детали и поможем найти лучший вариант для вашей истории.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADMIN: ALBUMS -->
+    <section id="albums" class="albums">
+      <div class="section-head reveal">
+        <span class="section-label">Discography</span>
+        <h2>Альбомы</h2>
+        <p>От размышлений к переживаниям — два релиза MalSu</p>
+      </div>
+
+      <div class="album-grid">
+        <article class="album-card album-card--thoughts reveal">
+          <a href="https://band.link/cSpGv" class="album-cover-link" target="_blank" rel="noopener noreferrer" data-event="album-open" data-album="thoughts">
+            <div class="album-cover">
+              <img src="malsu/malsu.jpg" alt="Обложка альбома «Мысли»" width="400" height="400" loading="lazy">
+              <span class="album-play" aria-hidden="true"><span>▶</span></span>
+              <span class="album-badge album-badge--out">В релизе</span>
+            </div>
+          </a>
+          <div class="album-body">
+            <span class="album-track">Side A · 01</span>
+            <h3>Мысли</h3>
+            <p>
+              Интроспективный альбом: внутренние монологи, сомнения,
+              тихие открытия. Звук ближе к поэзии, чем к поп-хиту.
+            </p>
+            <ul class="album-tags">
+              <li>рефлексия</li>
+              <li>атмосфера</li>
+              <li>лирика</li>
+            </ul>
+            <a href="https://band.link/cSpGv" class="album-link" target="_blank" rel="noopener noreferrer" data-event="album-open" data-album="thoughts">
+              Слушать на всех площадках →
+            </a>
+          </div>
+        </article>
+
+        <article class="album-card album-card--feelings reveal">
+          <a href="https://band.link/ZTV8E" class="album-cover-link" target="_blank" rel="noopener noreferrer" data-event="album-open" data-album="feelings">
+            <div class="album-cover">
+              <img src="malsu/Чувства.jpg" alt="Обложка альбома «Чувства»" width="400" height="400" loading="lazy">
+              <span class="album-play" aria-hidden="true"><span>▶</span></span>
+              <span class="album-badge album-badge--out">В релизе</span>
+            </div>
+          </a>
+          <div class="album-body">
+            <span class="album-track">Side B · 02 · 26 мая 2026</span>
+            <h3>Чувства</h3>
+            <p>
+              Эмоциональный контрапункт: любовь, тоска, надежда и вспышки
+              радости — всё, что не укладывается в слова. Альбом в релизе.
+            </p>
+            <ul class="album-tags">
+              <li>эмоции</li>
+              <li>мелодия</li>
+              <li>динамика</li>
+            </ul>
+            <a href="https://band.link/ZTV8E" class="album-link" target="_blank" rel="noopener noreferrer" data-event="album-open" data-album="feelings">
+              Слушать на всех площадках →
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. История проекта -->
+    <section id="story" class="story">
+      <div class="section-head reveal">
+        <span class="section-label">Story</span>
+        <h2>Музыка, которая всегда была рядом</h2>
+      </div>
+
+      <div class="story-content reveal">
+        <p>Задолго до появления проекта MalSu эти песни уже жили вместе с нами.</p>
+        <p>
+          Когда-то они звучали под гитару на кухне, в кругу друзей, на семейных
+          встречах или просто в тихие моменты, когда мы оставались наедине с
+          музыкой и друг с другом.
+        </p>
+        <p>
+          Годы шли, появлялись новые тексты, новые мелодии и новые истории. И
+          однажды пришло желание подарить этим песням полноценное звучание —
+          услышать их не только под гитару, но и в сопровождении музыки, которая
+          сможет раскрыть их характер и настроение.
+        </p>
+        <p>Так появился проект MalSu.</p>
+        <p>
+          Мы хотели, чтобы наши песни услышали родные, друзья, знакомые и
+          незнакомые люди. Потому что то, о чём мы поём, знакомо каждому: любовь и
+          расставания, надежды и сомнения, поиски себя и важные жизненные решения.
+        </p>
+
+        <div class="story-albums">
+          <article class="story-album reveal">
+            <h3>Мысли</h3>
+            <p>
+              Альбом о размышлениях, поиске себя и попытках найти ответы на вопросы,
+              которые рано или поздно задаёт себе каждый.
+            </p>
+          </article>
+          <article class="story-album story-album--feelings reveal">
+            <h3>Чувства</h3>
+            <p>
+              Более взрослый и осознанный альбом. Он о любви и расставаниях, о потерях
+              и надежде, о преодолении страхов и сомнений.
+            </p>
+          </article>
+        </div>
+
+        <p class="story-final">
+          Вместе «Мысли» и «Чувства» складываются в единую историю человека — от
+          размышлений к эмоциям, от вопросов к переживаниям.
+        </p>
+      </div>
+    </section>
+
+    <!-- ADMIN: TEAM -->
+    <section id="team" class="team">
+      <div class="section-head reveal">
+        <span class="section-label">Creators</span>
+        <h2>О нас</h2>
+      </div>
+
+      <div class="team-intro reveal">
+        <p class="team-lead">
+          Проект <strong>MalSu</strong> — это творческий союз двух авторов:
+        </p>
+        <p class="team-names">
+          <strong>Натальи Малаховой</strong> и <strong>Игоря Супрунчука</strong>.
+        </p>
+        <p class="team-lead">
+          Мы создаём авторскую музыку и нейропесни, объединяя идеи, тексты, эмоции
+          и современные возможности музыкального творчества.
+        </p>
+        <p class="team-lead">
+          Каждая композиция рождается в совместной работе и проходит путь от
+          первого замысла до готового звучания.
+        </p>
+
+        <div class="name-formula name-formula--center reveal" aria-label="Происхождение названия MalSu">
+          <span class="name-part name-part--mal"><em>Мал</em>ахова</span>
+          <span class="name-plus">+</span>
+          <span class="name-part name-part--su"><em>Су</em>прунчук</span>
+          <span class="name-equals">=</span>
+          <span class="name-result">MalSu</span>
+        </div>
+
+        <p class="team-sub">
+          Название проекта сложилось из первых слогов наших фамилий и стало
+          символом творческого союза, в котором каждая песня создаётся двумя
+          авторами.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <article class="team-card team-card--natalia reveal">
+          <div class="team-avatar" data-photo="malsu/natalia.jpg" data-initial="Н"></div>
+          <h3>Малахова Наталья</h3>
+          <p class="team-role">Соавтор проекта MalSu</p>
+          <p>
+            Автор песен, нейропромпт-инженер и аранжировщик. Участвует в создании
+            текстов, музыкальных концепций и звучания проекта. Исследует возможности
+            нейросетей в музыке и помогает превращать идеи в законченные композиции.
+          </p>
+        </article>
+
+        <article class="team-card team-card--igor reveal">
+          <div class="team-avatar" data-photo="malsu/igor.jpg" data-initial="И"></div>
+          <h3>Супрунчук Игорь</h3>
+          <p class="team-role">Соавтор проекта MalSu</p>
+          <p>
+            Автор песен и творческий партнёр проекта. Работает над текстами, идеями
+            и творческой концепцией композиций. Для него каждая песня — это
+            история, рассказанная через музыку, образы и эмоции.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ADMIN: TRACKS -->
+    <section id="order" class="order">
+      <div class="section-head reveal">
+        <span class="section-label">Custom</span>
+        <h2>Истории, которые становятся песнями</h2>
+        <p>Каждая история заслуживает своей музыки</p>
+      </div>
+
+      <div class="order-intro reveal">
+        <p>
+          День рождения, юбилей, признание в любви, семейная история,
+          корпоративный праздник или особенный подарок — иногда чувства и
+          воспоминания хочется сохранить не только в памяти, но и в музыке.
+        </p>
+        <p>
+          Мы создаём песни, которые рассказывают историю именно ваших людей, ваших
+          событий и ваших эмоций.
+        </p>
+        <p>
+          Каждая композиция рождается индивидуально и существует в единственном
+          экземпляре.
+        </p>
+      </div>
+
+      <div class="order-block reveal">
+        <h3 class="order-block-title">Какие истории можно превратить в песню</h3>
+        <ul class="story-tags">
+          <li>День рождения</li>
+          <li>Признание в любви</li>
+          <li>Семейная история</li>
+          <li>Юбилей</li>
+          <li>Корпоративное поздравление</li>
+          <li>Выпускной</li>
+          <li>Необычный подарок</li>
+          <li>Любая история, которую хочется сохранить в музыке</li>
+        </ul>
+      </div>
+
+      <ul class="track-list" id="track-list"></ul>
+
+      <div class="order-block reveal">
+        <h3 class="order-block-title">Как рождается ваша песня</h3>
+        <ol class="process-steps">
+          <li>
+            <span class="process-num">01</span>
+            <span class="process-text">Вы рассказываете свою историю.</span>
+          </li>
+          <li>
+            <span class="process-num">02</span>
+            <span class="process-text">Мы обсуждаем детали.</span>
+          </li>
+          <li>
+            <span class="process-num">03</span>
+            <span class="process-text">Создаём текст, музыку и аранжировку.</span>
+          </li>
+          <li>
+            <span class="process-num">04</span>
+            <span class="process-text">Вы получаете готовую песню.</span>
+          </li>
+        </ol>
+      </div>
+
+      <div class="order-cta reveal">
+        <div class="cta-action cta-action--center">
+          <a href="#contact" class="btn btn-primary" data-event="hero-story">Рассказать свою историю</a>
+          <p class="cta-followup">Ответим, обсудим детали и поможем найти лучший вариант для вашей истории.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADMIN: PRICING -->
+    <section id="pricing" class="pricing">
+      <div class="section-head reveal">
+        <span class="section-label">Pricing</span>
+        <h2>Стоимость</h2>
+        <p id="pricing-subtitle">Авторская песня на заказ</p>
+      </div>
+
+      <div class="pricing-card reveal">
+        <p class="pricing-price" id="pricing-price">от 4 000 ₽</p>
+        <p class="pricing-note" id="pricing-note">
+          Каждая песня создаётся индивидуально, поэтому окончательная стоимость
+          зависит от сложности проекта, объёма пожеланий, сроков исполнения и
+          особенностей заказа.
+        </p>
+
+        <div class="pricing-lists">
+          <div class="pricing-list-block">
+            <h3>Что входит в стоимость</h3>
+            <ul id="pricing-included"></ul>
+          </div>
+          <div class="pricing-list-block">
+            <h3>Что влияет на стоимость</h3>
+            <ul id="pricing-factors"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Почему выбирают MalSu -->
+    <section id="why" class="why">
+      <div class="section-head reveal">
+        <span class="section-label">Why MalSu</span>
+        <h2>Почему выбирают MalSu</h2>
+      </div>
+      <div class="why-grid" id="why-grid"></div>
+    </section>
+
+    <!-- ADMIN: FAQ -->
+    <section id="faq" class="faq">
+      <div class="section-head reveal">
+        <span class="section-label">FAQ</span>
+        <h2>Частые вопросы</h2>
+      </div>
+
+      <div class="faq-list reveal" id="faq-list"></div>
+    </section>
+
+    <!-- ADMIN: REVIEWS -->
+    <section id="reviews" class="reviews">
+      <div class="section-head reveal">
+        <span class="section-label">Reviews</span>
+        <h2>Истории наших заказчиков</h2>
+        <p>Каждая песня начинается с истории и остаётся в памяти надолго.</p>
+      </div>
+
+      <p class="reviews-placeholder reveal" id="reviews-placeholder">
+        Скоро здесь появятся отзывы и истории людей, для которых были созданы песни MalSu.
+      </p>
+
+      <div class="photo-reviews reveal" id="photo-reviews" hidden tabindex="0">
+        <p class="photo-reviews-label">Фотоотзывы</p>
+        <div class="photo-reviews-carousel" id="photo-reviews-carousel">
+          <button type="button" class="photo-reviews-btn photo-reviews-btn--prev" aria-label="Предыдущий отзыв">‹</button>
+          <div class="photo-reviews-viewport">
+            <div class="photo-reviews-track" id="photo-reviews-track"></div>
+          </div>
+          <button type="button" class="photo-reviews-btn photo-reviews-btn--next" aria-label="Следующий отзыв">›</button>
+        </div>
+        <div class="photo-reviews-dots" id="photo-reviews-dots" role="tablist" aria-label="Фотоотзывы"></div>
+      </div>
+
+      <div class="reviews-grid" id="reviews-grid"></div>
+    </section>
+
+    <!-- Эмоциональный блок -->
+    <section id="cta" class="cta-block">
+      <div class="cta-box reveal">
+        <div class="cta-bg" aria-hidden="true">
+          <span class="cta-glow"></span>
+          <span class="cta-note cta-note--1">♪</span>
+          <span class="cta-note cta-note--2">♫</span>
+          <span class="cta-note cta-note--3">♬</span>
+          <span class="cta-note cta-note--4">♩</span>
+        </div>
+        <div class="cta-inner">
+          <span class="section-label">Your story</span>
+          <h2>Когда слова хочется превратить в музыку</h2>
+          <div class="cta-text">
+            <p>Иногда бывает трудно подобрать нужные слова.</p>
+            <ul class="cta-list">
+              <li>Для признания в любви.</li>
+              <li>Для поздравления близкого человека.</li>
+              <li>Для благодарности родителям.</li>
+              <li>Для памяти о важных моментах жизни.</li>
+            </ul>
+            <p>
+              Музыка помогает сказать то, что не всегда получается выразить обычным
+              разговором.
+            </p>
+            <p>
+              Именно поэтому мы создаём песни, в которых звучат реальные истории,
+              настоящие чувства и живые эмоции.
+            </p>
+          </div>
+          <div class="cta-action cta-action--center">
+            <a href="#contact" class="btn btn-primary btn-cta-glow" data-event="hero-story">Рассказать свою историю</a>
+            <p class="cta-followup">Ответим, обсудим детали и поможем найти лучший вариант для вашей истории.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Стриминг -->
+    <section id="listen" class="listen">
+      <div class="listen-box reveal">
+        <span class="section-label">Stream</span>
+        <h2>Включить MalSu</h2>
+        <p>Одна ссылка — все стриминговые сервисы через Band.link</p>
+        <div class="listen-cards">
+          <a href="https://band.link/cSpGv" class="listen-card" target="_blank" rel="noopener noreferrer">
+            <img src="malsu/malsu.jpg" alt="" width="72" height="72">
+            <span class="listen-card-text">
+              <strong>Мысли</strong>
+              <small>Слушать сейчас</small>
+            </span>
+            <span class="listen-arrow">▶</span>
+          </a>
+          <a href="https://band.link/ZTV8E" class="listen-card" target="_blank" rel="noopener noreferrer">
+            <img src="malsu/Чувства.jpg" alt="" width="72" height="72">
+            <span class="listen-card-text">
+              <strong>Чувства</strong>
+              <small>Слушать сейчас · 26 мая 2026</small>
+            </span>
+            <span class="listen-arrow">▶</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADMIN: CONTACTS -->
+    <section id="contact" class="contact">
+      <div class="section-head reveal">
+        <span class="section-label">Contact</span>
+        <h2 id="contact-heading">Давайте создадим песню вместе</h2>
+        <p id="contact-lead">
+          Каждая песня начинается с истории. Расскажите нам о человеке, событии
+          или чувствах, которые хотите сохранить в музыке.
+        </p>
+      </div>
+
+      <div class="contact-card reveal">
+        <p class="contact-hint">
+          Чем подробнее вы расскажете о своей истории, тем точнее мы сможем передать её в музыке.
+        </p>
+
+        <a
+          href="#"
+          class="contact-tg"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-site-link="telegram"
+          data-event="contact-click"
+        >
+          <span class="contact-tg-label">Telegram</span>
+          <span class="contact-tg-user" data-site-text="telegramUser">@natali08082020</span>
+        </a>
+
+        <form class="contact-form" id="feedback-form">
+          <label>
+            <span>Ваше имя</span>
+            <input type="text" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
+          </label>
+          <label>
+            <span>Как с вами связаться</span>
+            <input type="text" name="contact" required placeholder="Telegram, email или телефон">
+          </label>
+          <label>
+            <span>Что вы хотите создать? <small class="label-optional">необязательно</small></span>
+            <select name="category" id="order-category">
+              <option value="">Выберите повод или тип песни</option>
+            </select>
+          </label>
+          <label>
+            <span>Когда нужна песня? <small class="label-optional">необязательно</small></span>
+            <input type="text" name="deadline" placeholder="Например: 15 июня, срочно">
+          </label>
+          <label>
+            <span>Планируемый бюджет <small class="label-optional">необязательно</small></span>
+            <select name="budget" id="order-budget">
+              <option value="">Выберите диапазон</option>
+            </select>
+          </label>
+          <label>
+            <span>Расскажите вашу историю</span>
+            <textarea name="story" rows="4" required placeholder="О ком или о чём песня, какое настроение, особые пожелания"></textarea>
+          </label>
+          <div class="cta-action">
+            <button type="submit" class="btn btn-primary btn-full" data-event="order-submit">Рассказать свою историю</button>
+            <p class="form-consent">
+              Нажимая кнопку «Рассказать свою историю», вы соглашаетесь с
+              <a href="privacy.html">Политикой конфиденциальности</a>.
+            </p>
+            <p class="cta-followup cta-followup--form">Ответим, обсудим детали и поможем найти лучший вариант для вашей истории.</p>
+          </div>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Страница благодарности -->
+  <div class="thank-you" id="thank-you" hidden aria-hidden="true">
+    <div class="thank-you-backdrop"></div>
+    <div class="thank-you-card" role="dialog" aria-labelledby="thank-you-title" aria-modal="true">
+      <span class="thank-you-icon" aria-hidden="true">♪</span>
+      <h2 id="thank-you-title">Спасибо за вашу историю!</h2>
+      <p class="thank-you-text" id="thank-you-text"></p>
+      <p class="thank-you-subtext" id="thank-you-subtext"></p>
+      <div class="thank-you-actions">
+        <button type="button" class="btn btn-secondary" id="thank-you-home">Вернуться на главную</button>
+        <a href="#listen" class="btn btn-primary" id="thank-you-listen">Слушать альбомы</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer-grid">
+      <div class="footer-col footer-col--brand">
+        <a href="admin/login.html" class="footer-logo">Mal<span>Su</span></a>
+        <p>Авторская музыка и песни на заказ.</p>
+        <p class="footer-tagline">Создаём песни, которые рассказывают историю.</p>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-heading">Навигация</h3>
+        <ul class="footer-nav">
+          <li><a href="index.html#albums">Альбомы</a></li>
+          <li><a href="index.html#story">История проекта</a></li>
+          <li><a href="index.html#team">О нас</a></li>
+          <li><a href="index.html#order">Песни на заказ</a></li>
+          <li><a href="index.html#pricing">Стоимость</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="index.html#contact">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-heading">Контакты</h3>
+        <ul class="footer-nav">
+          <li><a href="#" target="_blank" rel="noopener noreferrer" data-site-link="telegram">Telegram</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer" data-site-link="telegram" data-site-text="telegramUser">@natali08082020</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-heading">Документы</h3>
+        <ul class="footer-nav">
+          <li><a href="privacy.html">Политика конфиденциальности</a></li>
+          <li><a href="offer.html">Условия оказания услуг</a></li>
+          <li><a href="admin/login.html">Вход для администратора</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer-bottom">
+      <p class="footer-copy">© 2026 MalSu. Все права защищены.</p>
+      <p class="footer-legal">
+        Все материалы сайта защищены авторским правом.
+        Использование материалов возможно только с разрешения правообладателей.
+      </p>
+    </div>
+  </footer>
+
+  <script src="data/site.js"></script>
+  <script src="data/albums.js"></script>
+  <script src="data/tracks.js"></script>
+  <script src="data/faq.js"></script>
+  <script src="data/reviews.js"></script>
+  <script src="data/photo-reviews.js"></script>
+  <script src="data/hero-vinyl.js"></script>
+  <script src="data/pricing.js"></script>
+  <script src="data/contacts.js"></script>
+  <script src="data/team.js"></script>
+  <script src="data/news.js"></script>
+  <script src="data/index.js"></script>
+  <script src="utils/site-config.js"></script>
+  <script src="utils/site-links.js"></script>
+  <script src="crm/order-status.js"></script>
+  <script src="crm/payment-status.js"></script>
+  <script src="crm/order-activity.js"></script>
+  <script src="crm/order-model.js"></script>
+  <script src="utils/order-number.js"></script>
+  <script src="utils/seo.js"></script>
+  <script src="providers/admin-data.store.js"></script>
+  <script src="providers/orders.store.js"></script>
+  <script src="providers/local.provider.js"></script>
+  <script src="providers/supabase.provider.js"></script>
+  <script src="services/albums.service.js"></script>
+  <script src="services/tracks.service.js"></script>
+  <script src="services/faq.service.js"></script>
+  <script src="services/reviews.service.js"></script>
+  <script src="services/settings.service.js"></script>
+  <script src="services/pricing.service.js"></script>
+  <script src="services/orders.service.js"></script>
+  <script src="integrations/telegram.js"></script>
+  <script src="analytics/events.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
